@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main_div">
+     
+        <div class="music_container">
+            <h2 id="title">Dil Ko Karar Aaya</h2>
+            <h3 id="artist">Yasser D., Neha K.</h3>
+            <div class="img_container">
+                <img src="images/DKKA.jpg" alt="">
+            </div>
+            <audio src="music/DKKA.mp3"></audio>
+
+
+            <!--progress bar-->
+            <div class="progressbar_container" id="progress_container"> 
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">4:05</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+                   
+            
+             <div class="music_controls">
+                <i class='bx bx-skip-previous' id="prev" title="Previous"></i>
+                <i class='bx bx-play main_button' id="play" title="Play"></i>
+                <i class='bx bx-skip-next' id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script> 
+ 
+</body>
+</html>
